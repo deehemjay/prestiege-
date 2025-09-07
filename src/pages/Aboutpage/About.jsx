@@ -7,6 +7,7 @@ import img from "../../images/years.png";
 import { FaCheckSquare } from "react-icons/fa";
 import AboutSecTwo from "./AboutSecTwo";
 import AboutSecFour from "./AboutSecFour";
+import Footer from "../../components/Footer";
 
 const About = () => {
   return (
@@ -26,7 +27,8 @@ const About = () => {
         icon={FaCheckSquare}
       />
       <AboutSecTwo />
-      <AboutSecFour/>
+      <AboutSecFour />
+      <Footer/>
     </>
   );
 };

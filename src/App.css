@@ -21,6 +21,12 @@ body {
     }
   }
 }
+.ft-link{
+  color: black;
+}
+.ft-link:hover{
+  color: #3A65F2;
+}
 
 /* media query */
 @media (max-width: 915px) {
