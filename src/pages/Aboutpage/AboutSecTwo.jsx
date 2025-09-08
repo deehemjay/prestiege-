@@ -36,7 +36,7 @@ const AboutSecTwo = () => {
               <Col
                 md={6} lg={6}
                 className="bg-white rounded-1 p-3"
-                style={{ maxHeight: "250px", width: "500px"}}
+                style={{ maxHeight: "250px", width: "400px"}}
                 key={item.id}
               >
                 <p className="fs-4 fw-bold">{item.text1}</p>

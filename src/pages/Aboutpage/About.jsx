@@ -9,6 +9,7 @@ import AboutSecTwo from "./AboutSecTwo";
 import AboutSecFour from "./AboutSecFour";
 import Footer from "../../components/Footer";
 import LastSec from "./LastSec";
+import AboutSecFive from "./AboutSecFive";
 
 const About = () => {
   return (
@@ -29,6 +30,7 @@ const About = () => {
       />
       <AboutSecTwo />
       <AboutSecFour />
+      <AboutSecFive/>
       <LastSec/>
       <Footer/>
     </>

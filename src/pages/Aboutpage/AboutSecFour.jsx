@@ -21,7 +21,7 @@ const AboutSecFour = () => {
     return (
         <>
              <div style={{ backgroundColor: "#A44730", padding: "40px 0 60px 0"}} className="mt-5">
-        <Container  fluid>
+        <Container fluid>
           <div className="d-flex justify-content-center align-items-center gap-2">
             <img src={img} alt="" />
             <p className="fs-4 text-white">OUR CORE VALUES</p>
@@ -38,7 +38,7 @@ const AboutSecFour = () => {
               <Col
                 md={4} lg={4}
                 className="rounded-1 p-3 text-center text-white"
-                style={{backgroundColor: "#3A65F2", width: '390px'}}
+                style={{backgroundColor: "#3A65F2", width: '300px'}}
                 key={item.id} 
               >
                 <p className="fs-1 fw-bold">{item.text1}</p>
