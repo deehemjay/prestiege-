@@ -8,6 +8,7 @@ import { FaCheckSquare } from "react-icons/fa";
 import AboutSecTwo from "./AboutSecTwo";
 import AboutSecFour from "./AboutSecFour";
 import Footer from "../../components/Footer";
+import LastSec from "./LastSec";
 
 const About = () => {
   return (
@@ -28,6 +29,7 @@ const About = () => {
       />
       <AboutSecTwo />
       <AboutSecFour />
+      <LastSec/>
       <Footer/>
     </>
   );
