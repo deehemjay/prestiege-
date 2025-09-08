@@ -10,6 +10,7 @@ import AboutSecFour from "./AboutSecFour";
 import Footer from "../../components/Footer";
 import LastSec from "./LastSec";
 import AboutSecFive from "./AboutSecFive";
+import AboutSecThree from "./AboutSecThree";
 
 const About = () => {
   return (
@@ -29,6 +30,7 @@ const About = () => {
         icon={FaCheckSquare}
       />
       <AboutSecTwo />
+      <AboutSecThree/>
       <AboutSecFour />
       <AboutSecFive/>
       <LastSec/>
