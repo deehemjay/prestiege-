@@ -15,9 +15,11 @@ const Counter = ({ end }) => {
     const timer = setInterval(() => {
       start += step;
       if (start >= end) {
-        start = 0; // reset after reaching end
+        clearInterval(timer);
+        setCount(end);
+      } else {
+        setCount(start);
       }
-      setCount(start);
     }, interval);
 
     return () => clearInterval(timer);
