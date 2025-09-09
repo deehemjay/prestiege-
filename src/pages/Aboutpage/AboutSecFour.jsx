@@ -1,22 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import img from "../../images/star.png";
 
 const AboutSecFour = () => {
+
+const Counter = ({ end }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const step = 50;
+    const interval = 20;
+
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= end) {
+        start = 0; // reset after reaching end
+      }
+      setCount(start);
+    }, interval);
+
+    return () => clearInterval(timer);
+  }, [end]);
+
+  return <span>{count}+</span>;
+};
+
   const secTwo = [
     {
-      text1: "5000+",
+      text1: <Counter end={5000} />,
       text2: "Happy Clients",
     },
     {
-      text1: "3000+",
+      text1: <Counter end={3000} />,
       text2: "Project Done",
     },
     {
-      text1: "1000+",
+      text1: <Counter end={1000} />,
       text2: "Project Done",
     }
   ];
+
+
 
     return (
         <>
