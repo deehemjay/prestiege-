@@ -22,14 +22,12 @@ const Header = () => {
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/residentialService">Residental Cleaning</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/janitorialService">Janitorial Cleaning</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/supplyService">Supply of Material</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/postConstructionService">Post Construction Cleaning</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/funmigationService">Funmigation/Pest Control</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/industrialService">Industrial Cleaning</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/project">Project</Nav.Link>
